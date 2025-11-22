@@ -2,7 +2,7 @@ local json = require("json")
 
 function SaveLevel()
 	print("SAVING LEVEL...")
-	local levelfile = {tilemap = tilemap,eObjs = eObjs,iObjs = iObjs,pObj = pObj,exit = exit,secret = secret}
+	local levelfile = {tilemap = tilemap,eObjs = eObjs,iObjs = iObjs,pObj = pObj,exit = exit,secret = secret,jsonfile = "nrllevel"}
 	local filename = "nrl_level_"..os.date("!%Y-%m-%d_%H-%M-%S")..".json"
 	print("Saving as: "..filename)
 	lvlfile = love.filesystem.newFile(filename)
